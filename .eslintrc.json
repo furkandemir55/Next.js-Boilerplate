@@ -1,3 +1,51 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "css-modules",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "React": true,
+    "JSX": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:storybook/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "css-modules/no-unused-class": [
+      "warn",
+      {
+        "camelCase": true
+      }
+    ],
+    "css-modules/no-undef-class": [
+      "error",
+      {
+        "camelCase": true
+      }
+    ],
+    "array-callback-return": "error",
+    "no-console": "warn",
+    "no-undef": "error",
+    "no-use-before-define": "error",
+    "no-unreachable-loop": "error",
+    "sort-keys": "warn",
+    "react/jsx-sort-props": "warn",
+    "react/hook-use-state": "error",
+    "react/jsx-no-undef": "error",
+    "react/jsx-tag-spacing": "error"
+  }
 }

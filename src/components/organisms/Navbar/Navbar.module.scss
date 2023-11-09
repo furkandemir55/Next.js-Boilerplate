@@ -1,0 +1,37 @@
+$navbarHeight: 50px;
+
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: $navbarHeight;
+
+  padding: 20px;
+
+  background: rgba(16, 59, 89, 0.6);
+  backdrop-filter: blur(10px);
+
+  & ~ *:not(script) {
+    margin-top: $navbarHeight;
+  }
+
+  .links {
+    display: flex;
+    gap: 10px;
+
+    margin-left: 10px;
+
+    & > a {
+      padding: 4px 10px;
+      border-radius: 4px;
+
+      &:hover {
+        background: rgba(45, 41, 41, 0.4);
+
+      }
+    }
+  }
+}

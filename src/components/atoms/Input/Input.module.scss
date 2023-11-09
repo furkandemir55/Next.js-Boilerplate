@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+
+  padding: 5px 10px 5px 3px;
+
+  &.small {
+    height: 24px;
+    font-size: 12px;
+  }
+
+  &.large {
+    height: 48px;
+    font-size: 24px;
+  }
+}

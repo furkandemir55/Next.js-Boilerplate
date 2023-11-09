@@ -1,0 +1,39 @@
+$color1: #b9965c;
+$color2: #98804c;
+$color3: #6b5b35;
+
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  width: fit-content;
+
+  padding: 5px 10px;
+  border-radius: 4px;
+  user-select: none;
+
+  color: white;
+  fill: white;
+
+  &.variant1 {
+    height: 34px;
+    background-color: $color1;
+
+    &:hover {
+      background-color: $color2;
+    }
+
+    &:active {
+      background-color: $color3;
+    }
+  }
+
+  &:disabled {
+    background-color: gray !important;
+    pointer-events: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

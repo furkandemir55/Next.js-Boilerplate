@@ -1,0 +1,8 @@
+.wrapper {
+  display: flex;
+  height: 30px;
+
+  & > * {
+    height: auto !important;
+  }
+}
